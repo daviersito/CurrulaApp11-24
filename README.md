@@ -1,3 +1,5 @@
+[Ver video en YouTube]([https://www.youtube.com/watch?v=CODIGO_DEL_VIDEO](https://www.youtube.com/watch?v=S0-1aJoKtrg))
+
 # CurruñaApp 🍦
 
 Aplicación Android de comercio electrónico para la venta de helados y productos artesanales. Incluye gestión de usuarios, carrito de compras, checkout y un panel de administración para gestionar productos y pedidos.
