@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Perfil"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+    <item
+        android:id="@+id/nav_products"
+        android:title="Productos"
+        android:icon="@android:drawable/ic_menu_sort_by_size" />
+    
+    <!-- Cliente -->
+    <item
+        android:id="@+id/nav_cart"
+        android:title="Carrito"
+        android:icon="@android:drawable/ic_menu_view" />
+
+    <!-- Admin -->
+    <item
+        android:id="@+id/nav_add"
+        android:title="Agregar"
+        android:icon="@android:drawable/ic_input_add" />
+    <item
+        android:id="@+id/nav_users"
+        android:title="Usuarios"
+        android:icon="@android:drawable/ic_menu_info_details" />
+    <item
+        android:id="@+id/nav_orders"
+        android:title="Pedidos"
+        android:icon="@android:drawable/ic_menu_agenda" />
+
+</menu>

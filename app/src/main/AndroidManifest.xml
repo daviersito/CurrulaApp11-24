@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  El manifiesto de la aplicación.
+  Este archivo es esencial en toda aplicación Android. Declara los componentes de la aplicación
+  (actividades, servicios, etc.), los permisos que requiere y otras configuraciones a nivel de aplicación.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.curruaapp">
+
+    <!--
+      Permiso para acceder a Internet.
+      Es necesario para realizar peticiones de red, como iniciar sesión o cargar datos desde una API.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+      La etiqueta de la aplicación, que contiene la declaración de los componentes de la aplicación.
+    -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CurruñaApp">
+
+        <!--
+          La actividad principal (MainActivity).
+          Esta es la pantalla que se lanza cuando el usuario abre la aplicación.
+          El 'intent-filter' con MAIN y LAUNCHER la designa como el punto de entrada de la aplicación.
+        -->
+        <activity android:name=".ui.MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+          La actividad Home (HomeActivity).
+          Esta actividad se muestra después de que el usuario inicia sesión.
+          'android:exported="false"' significa que esta actividad no puede ser lanzada por otras aplicaciones.
+        -->
+        <activity android:name=".ui.HomeActivity" android:exported="false" />
+
+    </application>
+</manifest>

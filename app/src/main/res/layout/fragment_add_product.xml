@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.AddProductFragment">
+
+    <ScrollView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Nombre" />
+
+            <EditText android:id="@+id/etBrand" android:hint="Marca" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etCategory" android:hint="Categoría" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio"
+                android:inputType="number" />
+
+            <EditText android:id="@+id/etStock" android:hint="Stock" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etDesc" android:hint="Descripción" android:minLines="3" android:gravity="top"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnPick" android:text="Seleccionar imágenes" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTint="@color/colorPrimary"/>
+            <TextView android:id="@+id/tvPicked" android:text="0 imágenes seleccionadas" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundTint="@color/colorPrimary"/>
+
+            <Button android:id="@+id/btnCreate" android:text="Crear producto" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTint="@color/colorPrimary"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

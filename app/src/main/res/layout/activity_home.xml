@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Layout para la pantalla principal (HomeActivity).
+  Utiliza un LinearLayout vertical para organizar sus elementos.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+
+    <!--
+      TextView para mostrar un mensaje de bienvenida al usuario.
+    -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Bienvenido"/>
+
+    <!--
+      Contenedor principal para los fragmentos.
+      Aquí se mostrarán los diferentes fragmentos de la aplicación (e.g., productos, perfil).
+      El 'layout_weight="1"' hace que ocupe todo el espacio vertical disponible.
+    -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--
+      Barra de navegación inferior.
+      Permite al usuario cambiar entre los diferentes fragmentos principales de la aplicación.
+      El menú se define en 'app:menu="@menu/bottom_nav_menu"'.
+    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
