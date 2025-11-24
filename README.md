@@ -1,4 +1,4 @@
-[Ver video en YouTube]([https://www.youtube.com/watch?v=CODIGO_DEL_VIDEO](https://www.youtube.com/watch?v=S0-1aJoKtrg))
+enlace video de youtube:   https://www.youtube.com/watch?v=S0-1aJoKtrg
 
 # CurruñaApp 🍦
 
